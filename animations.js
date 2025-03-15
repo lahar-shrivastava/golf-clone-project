@@ -1,0 +1,13 @@
+gsap.registerPlugin(ScrollTrigger);
+gsap.from("#nav",{
+    backgroundColor:"#000",
+    duration:0.5,
+    height:"120px",
+    scrollTrigger:{
+     trigger:"#nav",
+     scroll:"body",
+     marker:true,
+     start:"top-10%",
+     scrub:2
+    }
+})
